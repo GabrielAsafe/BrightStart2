@@ -1,4 +1,4 @@
-on: pull
+on: push
 jobs:
   build-container:
     name: Build container
@@ -17,4 +17,3 @@ jobs:
         context: .
         push: true
         tags: gasafemartins/brightstart-martins_gabriel:${ github.run_number }
-        
